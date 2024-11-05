@@ -1,14 +1,11 @@
-/* Theme Styles */
 body {
   font-family: Arial, sans-serif;
   background-color: #191d28;
-  /* dark background */
   color: #3dc6c1;
   /* text color */
+  width: 100%;
   margin: 0;
   padding: 0;
-  height: 100vh;
-  /* Full height */
   display: flex;
   flex-direction: column;
 }
@@ -23,34 +20,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Allow the container to grow and fill the space */
 }
 
 h1 {
   font-size: 2.5em;
   margin-bottom: 20px;
   color: #3dc6c1;
-  /* Updated heading color */
   font-weight: bold;
-  /* Bold heading */
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   background-color: #ffffff;
-  /* White background for the table */
   color: #000000;
-  /* Updated text color */
   margin-top: 20px;
   border: 1px solid #4a5568;
-  /* Border for the table */
   border-radius: 8px;
-  /* Rounded corners */
   overflow: hidden;
-  /* Ensure rounded corners apply */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-  /* Shadow effect */
 }
 
 th,
@@ -59,29 +47,22 @@ td {
   text-align: center;
   border-bottom: 1px solid #4a5568;
   font-weight: bold;
-  /* Border for table rows */
   transition: transform 0.2s;
-  /* Transition for hover effects */
 }
 
 th {
   background-color: #4a5568;
-  /* Header background color */
   color: #3dc6c1;
   font-weight: bold;
-  /* Bold text for headers */
 }
 
 tr:nth-child(even) {
   background-color: #f0f0f0;
-  /* Light gray for even rows */
 }
 
 tr:hover {
   background-color: #d1d1d1;
-  /* Gray hover effect */
   transform: scale(1.02);
-  /* Transform on hover */
 }
 
 .search-container {
@@ -99,9 +80,7 @@ tr:hover {
   color: #f7fafc;
   outline: none;
   width: 300px;
-  /* Fixed width for search input */
   margin-right: 10px;
-  /* Space between input and button */
 }
 
 .search-input::placeholder {
@@ -132,17 +111,15 @@ tr:hover {
 
 .footer {
   background-color: #2d3748;
-  /* Footer background */
   padding: 10px;
   color: #a0aec0;
   text-align: center;
   margin-top: 20px;
 }
 
-/* Navbar Styles */
 nav {
   background-color: #2d3748;
-  /* Navbar background */
+  width: 100%;
   padding: 15px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   position: sticky;
@@ -152,7 +129,6 @@ nav {
 
 nav h2 {
   color: #3dc6c1;
-  /* Navbar text color */
   margin: 0;
   font-size: 1.5em;
 }
@@ -184,49 +160,42 @@ nav h2 {
   font-weight: bold;
 }
 
-/* Stock Card Container */
 #stockCard {
   width: 100%;
   display: flex;
   gap: 10px;
   flex-direction: column;
-  max-width: 24rem; /* Equivalent to Tailwind's max-w-md */
+  max-width: 24rem;
 }
 
-/* Card Header */
 #stockCard .bg-gradient {
-  background: linear-gradient(
-    to right,
-    #2563eb,
-    #1e40af
-  ); /* from-blue-600 to-blue-800 */
+  background: linear-gradient(to right, #2563eb, #1e40af);
   color: white;
-  padding: 1rem; /* Equivalent to Tailwind's p-4 */
-  border-top-left-radius: 0.5rem; /* Equivalent to rounded-t-lg */
+  padding: 1rem;
+  border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 
 #stockCard h2 {
-  font-size: 1.5rem; /* Equivalent to text-2xl */
+  font-size: 1.5rem;
 }
 
 #stockCard .text-sm {
-  font-size: 0.875rem; /* Equivalent to text-sm */
-  font-weight: 400; /* Equivalent to font-normal */
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
-/* Card Content */
 #stockCard .content {
-  padding: 1.5rem; /* Equivalent to p-6 */
+  padding: 1.5rem;
   background-color: white;
-  border-bottom-left-radius: 0.5rem; /* Equivalent to rounded-b-lg */
+  border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
 }
 
 #stockCard .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem; /* Equivalent to gap-4 */
+  gap: 1rem;
 }
 
 #stockCard .col-span-2 {
@@ -235,25 +204,25 @@ nav h2 {
 
 /* Card Content Styles */
 #stockCard .bg-blue-50 {
-  background-color: #eff6ff; /* Equivalent to bg-blue-50 */
-  padding: 0.75rem; /* Equivalent to p-3 */
-  border-radius: 0.5rem; /* Equivalent to rounded-lg */
+  background-color: #eff6ff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
 }
 
 #stockCard .text-blue-800 {
-  color: #1e3a8a; /* Equivalent to text-blue-800 */
-  font-weight: 600; /* Equivalent to font-semibold */
+  color: #1e3a8a;
+  font-weight: 600;
 }
 
 #stockCard .text-2xl {
   font-size: 1.5rem;
-  font-weight: 700; /* Equivalent to font-bold */
-  color: #2563eb; /* Equivalent to text-blue-600 */
+  font-weight: 700;
+  color: #2563eb;
 }
 
 #stockCard .text-gray-500 {
-  color: #6b7280; /* Equivalent to text-gray-500 */
-  font-size: 0.875rem; /* Equivalent to text-sm */
+  color: #6b7280;
+  font-size: 0.875rem;
 }
 
 #stockCard .font-semibold {
@@ -261,25 +230,25 @@ nav h2 {
 }
 
 #stockCard .text-red-500 {
-  color: #ef4444; /* Equivalent to text-red-500 */
+  color: #ef4444;
 }
 
 #stockCard .text-green-500 {
-  color: #10b981; /* Equivalent to text-green-500 */
+  color: #10b981;
 }
 
 #stockCard .bg-gray-50 {
-  background-color: #f9fafb; /* Equivalent to bg-gray-50 */
-  padding: 0.75rem; /* Equivalent to p-3 */
-  border-radius: 0.5rem; /* Equivalent to rounded-lg */
+  background-color: #f9fafb;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
 }
 
 #stockCard .text-green-600 {
-  color: #047857; /* Equivalent to text-green-600 */
+  color: #047857;
 }
 
 #stockCard .text-red-600 {
-  color: #dc2626; /* Equivalent to text-red-600 */
+  color: #dc2626;
 }
 
 #stockCard .mt-4 {
@@ -291,5 +260,5 @@ nav h2 {
 }
 
 #stockCard .text-xs {
-  font-size: 0.75rem; /* Equivalent to text-xs */
+  font-size: 0.75rem;
 }
